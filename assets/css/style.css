@@ -42,6 +42,25 @@ a {
   opacity: 0.9;
 }
 
+.section-heading {
+  color: #10375c;
+  text-align: center;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2; /* 120% */
+  letter-spacing: -1px;
+}
+.section-desc {
+  margin-top: 18px;
+  color: #575f66;
+  text-align: center;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.67; /* 166.667% */
+}
+
 /* ================= header ================== */
 .header {
   background: var(--header-bg);
@@ -151,8 +170,8 @@ a {
   justify-content: flex-end;
 }
 
-.hero__img{
-   object-fit: cover;
+.hero__img {
+  object-fit: cover;
 }
 .hero__img--large {
   width: 330px;
@@ -166,4 +185,89 @@ a {
   width: 210px;
   height: 410px;
   border-radius: 0px 6px 6px 0px;
+}
+
+/* ==================service================== */
+.service {
+  padding: 170px 0;
+  background-color: #fff;
+}
+
+.section-heading,
+.section-desc {
+  text-align: center;
+}
+
+.section-desc {
+  width: 468px;
+  margin: 0 auto;
+}
+
+.service__row {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service__img {
+  width: 570px;
+  height: 570px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.service-item {
+  display: flex;
+  width: 470px;
+  padding: 21px;
+  background: #fff;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.service-item:hover {
+  position: relative;
+  box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+
+.service-item:hover .service-item__icon {
+  color: #fff;
+  background: #2e80ce;
+}
+
+.service-item__icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin-right: 19px;
+  border-radius: 30px;
+  background: #eff6fd;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
+  transition: 0.4s;
+  color: #10375c;
+}
+
+.service-item__heading {
+  color: #10375c;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.service__desc {
+  color: #575f66;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.75; /* 175% */
+  margin: 8px;
+}
+
+.service__btn{
+  margin-top: 55px;
 }
