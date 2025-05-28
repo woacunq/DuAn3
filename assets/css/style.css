@@ -517,7 +517,7 @@ a {
 
 .blog-content {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   column-gap: 30px;
 }
@@ -539,7 +539,8 @@ a {
 }
 
 .blog-right {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 30px;
 }
 
@@ -585,6 +586,30 @@ a {
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 400;
+}
+
+/* =====================appointment=========================== */
+.appointment {
+  margin: 85px 0 170px;
+}
+
+.appointmnet__inner {
+  text-align: center;
+  padding: 100px 179px;
+  background: #f6fbff;
+}
+
+.appointment__heading::after{
+  content: "";
+  display: block;
+  width: 136px;
+  height: 2px;
+  background-color: #2e80ce;
+  margin: 18px auto;
+}
+.appointment__desc {
+  margin: 18px auto 36px;
+  max-width: 617px;
 }
 
 /* =================footer================ */
@@ -684,7 +709,7 @@ li {
   line-height: 1.85; /* 185.714% */
 }
 
-.footer__desc--end{
+.footer__desc--end {
   padding: 28px 0 40px;
   text-align: center;
 }
